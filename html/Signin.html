@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="/Rayolat.css" />
+  </head>
+  <body>
+    <div class="off-canvas">
+      <!-- your menu content here -->
+       <ul>
+       <li><a href="/index.html">Home</a></li>
+      <li> <a href="./services.html">Services</a></li>
+      <li> <a href="./vendors.html">Vendors</a></li>
+     <li>  <a href="./about.html">About</a></li>
+      <li> <a href="./login.html">Login</a></li>
+      <li> <a href="./Signin.html">Sign in</a></li>
+      </ul>
+    </div>
+    <section class="herosection" id="signin">
+      <header>
+        <nav class="navigation">
+          <div class="container">
+            <img src="/image/Logo.png" alt="logo" />
+            <div class="container2">
+              <a href="/index.html">Home</a>
+              <a href="./services.html">Services</a>
+              <a href="./vendors.html">Vendors</a>
+              <a href="./about.html">About</a>
+             
+              <a href="./login.html">Login</a>
+              <a href="./Signin.html">Sign in</a>
+            </div>
+            <svg
+            class="menu-toggle"
+              class="menu"
+              xmlns="http://www.w3.org/2000/svg"
+              width="2em"
+              height="2em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1m0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1M3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1"
+              />
+            </svg>
+          </div>
+        </nav>
+    <h1 class="Form">Fill In The Form To Sign In</h1>
+    <form id="signin-form" >
+      <fieldset>
+        <label
+          >First Name
+          <input placeholder="Enter Your First Name" required="" type="text" />
+        </label>
+        <label>
+          Last Name
+          <input placeholder="Enter Your Last Name" required="" type="text" />
+        </label>
+        <label>
+          Email
+          <input placeholder="Enter Your Email" required="" type="email" />
+        </label>
+        <label>
+          Password
+          <input
+            placeholder="Create a password"
+            type="password"
+            required=""
+            minlength="8"
+            pattern="[a-z0-5]{8,}"
+          />
+        </label>
+      </fieldset>
+      <fieldset class="radiobutton">
+        <div>
+          <legend>Type</legend>
+          <label for="buyer" class="inline"
+            ><input
+              type="radio"
+              class="inline"
+              name="buyer radio"
+              id="buyer"
+            />Buyer
+          </label>
+        </div>
+        <div>
+          <label for="vendor" class="inline"
+            ><input type="radio" class="inline" name="Type" id="vendor" />Vendor
+          </label>
+        </div>
+        <div>
+          <label for="both" class="inline"
+            ><input
+              type="radio"
+              class="inline"
+              name="Type"
+              id="both"
+            />Both</label
+          >
+        </div>
+      </fieldset>
+      
+    </form>
+    <a href="/index.html"><button class="Submit">Sign in</button></a> 
+  </section>
+  <script src="./slider.js"></script>
+
+  <script>
+    const signinForm = document.getElementByID("signin-form")
+    signinForm.addEventListener("submit", (e)=>{
+      alert()
+      e.preventDefault();
+      window.location.href = "./index.html"
+    })
+  </script>
+</body>
+</html>
